@@ -1,23 +1,76 @@
 aid: geocento-limited
+
 name: Geocento Limited
-description: 'Geocento Limited is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://static.wixstatic.com/media/56a452_2f91c7d752ff409cb017eab2786e473c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/56a452_2f91c7d752ff409cb017eab2786e473c%7Emv2.png
+
+description: Geocento Limited provides end‑to‑end virtual constellation design, procurement and management services for earth observation data.
+  Leveraging extensive consulting expertise, they help organisations build and operate custom satellite imaging constellations, offering consultancy,
+  technology platforms, and full‑service procurement to enhance sovereign capabilities and programmatic resilience.
+
 url: https://raw.githubusercontent.com/api-evangelist/geocento-limited/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Earth-Observation
+- Satellite-Constellation
+- Procurement
+- Consulting
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/geocento-limited-llms.txt
+- type: Hosts
+  url: hosts/geocento-limited-hosts.yml
+- type: Vendors
+  url: vendors/geocento-limited-vendors.yml
+- type: Newsroom
+  url: https://www.geocento.com/news
+- type: Blog
+  url: https://www.geocento.com/blog
+- type: DomainSecurity
+  url: security/geocento-limited-domain-security.yml
 - type: Website
   url: https://www.geocento.com/
+- type: Documentation
+  url: https://www.geocento.com/what-we-offer
+- type: TermsOfService
+  url: https://www.geocento.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.geocento.com/privacy-statement
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's documentation pages are rendered via Wix JavaScript, preventing machine‑readable contract discovery.
+  evidence:
+  - url: https://www.geocento.com/what-we-offer
+    status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
